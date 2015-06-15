@@ -16,7 +16,6 @@
     
     if(tableView != nil && tableView.superview != nil && !tableView.hidden)
     {
-        
         bool contains = CGRectContainsPoint(tableView.frame, point);
         
         if(contains) {

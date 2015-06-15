@@ -460,7 +460,7 @@ withAutoCompleteString:(NSString *)string
 - (void)closeAutoCompleteTableView
 {
     if([self.autoCompleteDelegate
-        respondsToSelector:@selector(autoCompleteTextField:willCloseAutoCompleteTableView)]){
+        respondsToSelector:@selector(autoCompleteTextField:willCloseAutoCompleteTableView:)]){
         [self.autoCompleteDelegate autoCompleteTextField:self
                            willCloseAutoCompleteTableView:self.autoCompleteTableView];
     }
